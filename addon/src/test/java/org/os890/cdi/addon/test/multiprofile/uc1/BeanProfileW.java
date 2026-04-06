@@ -15,14 +15,15 @@
  * limitations under the License.
  */
 
-package org.os890.cdi.addon.test.multiprofile.uc2;
+package org.os890.cdi.addon.test.multiprofile.uc1;
 
 import jakarta.enterprise.context.ApplicationScoped;
+import org.os890.cdi.addon.multiprofile.api.Profile;
 
 /**
- * Test bean belonging to profile A (active) via type-safe {@link ProfileA} stereotype.
+ * Test bean belonging to profile W (active).
  */
-@ProfileA
+@Profile("W")
 @ApplicationScoped
-public class BeanProfileA {
+public class BeanProfileW {
 }
